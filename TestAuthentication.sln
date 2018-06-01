@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAuthentication", "TestAuthentication\TestAuthentication.csproj", "{ED467D56-1030-4530-9AE4-C6B388519C8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuplexCommunication", "DuplexCommunication\DuplexCommunication.csproj", "{0168094A-7D10-412B-8A01-B8EC644DE897}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHttpService", "WebHttpService\WebHttpService.csproj", "{2BE37C0D-B53D-466B-B18D-A3932418EB5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallRestFromWcf", "CallRestFromWcf\CallRestFromWcf.csproj", "{1586B554-A54B-46D9-BBCF-E7E5551E7849}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomBindings", "CustomBinding\CustomBindings.csproj", "{A08FE945-7A91-4628-ACBB-1DAEA01C3F70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameNamespace", "NameNamespace\NameNamespace.csproj", "{1D17CEC8-94BC-43D7-9E5B-B9D8EA921B0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameNamespaceClient", "NameNamespaceClient\NameNamespaceClient.csproj", "{5FA4E1DF-69A5-44D7-981D-FCEC78056B66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED467D56-1030-4530-9AE4-C6B388519C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED467D56-1030-4530-9AE4-C6B388519C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED467D56-1030-4530-9AE4-C6B388519C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED467D56-1030-4530-9AE4-C6B388519C8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0168094A-7D10-412B-8A01-B8EC644DE897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0168094A-7D10-412B-8A01-B8EC644DE897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0168094A-7D10-412B-8A01-B8EC644DE897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0168094A-7D10-412B-8A01-B8EC644DE897}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BE37C0D-B53D-466B-B18D-A3932418EB5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BE37C0D-B53D-466B-B18D-A3932418EB5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BE37C0D-B53D-466B-B18D-A3932418EB5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BE37C0D-B53D-466B-B18D-A3932418EB5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1586B554-A54B-46D9-BBCF-E7E5551E7849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1586B554-A54B-46D9-BBCF-E7E5551E7849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1586B554-A54B-46D9-BBCF-E7E5551E7849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1586B554-A54B-46D9-BBCF-E7E5551E7849}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A08FE945-7A91-4628-ACBB-1DAEA01C3F70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A08FE945-7A91-4628-ACBB-1DAEA01C3F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A08FE945-7A91-4628-ACBB-1DAEA01C3F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A08FE945-7A91-4628-ACBB-1DAEA01C3F70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D17CEC8-94BC-43D7-9E5B-B9D8EA921B0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D17CEC8-94BC-43D7-9E5B-B9D8EA921B0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D17CEC8-94BC-43D7-9E5B-B9D8EA921B0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D17CEC8-94BC-43D7-9E5B-B9D8EA921B0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FA4E1DF-69A5-44D7-981D-FCEC78056B66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FA4E1DF-69A5-44D7-981D-FCEC78056B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FA4E1DF-69A5-44D7-981D-FCEC78056B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FA4E1DF-69A5-44D7-981D-FCEC78056B66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
