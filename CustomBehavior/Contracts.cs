@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 
 namespace CustomBehavior
 {
+    [MyContractBehavior]
     [ServiceContract]
     interface ICalculator
     {
+        [MyOperationBehavior]
         [OperationContract]
         int Add(int x, int y);
     }
