@@ -6,34 +6,23 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RetrieveMetadata
+namespace TracingLog
 {
-    public class CalculatorService : ICalculator
+    class Calculator : ICalculator
     {
-        public double Add(double n1, double n2)
+        public double Divide(double x, double y)
         {
-            return n1 + n2;
-        }
-
-        public double Subtract(double n1, double n2)
-        {
-            return n1 - n2;
-        }
-
-        public double Multiply(double n1, double n2)
-        {
-            return n1 * n2;
-        }
-
-        public double Divide(double n1, double n2)
-        {
-            if(n2 == 0)
+            if(y == 0)
             {
-                MathError error = new MathError("Divide", "Divide By Zero Exception");
-                throw new FaultException<MathError>(error, new FaultReason("Parameters passed are not valid"));
+                //throw new DivideByZeroException("Divide By Zero Exception");
+                Calculator.MathError error = new Calculator.MathError("Divide", "Divide By Zero Exception");
+                throw new FaultException<Calculator.MathError>(error, new FaultReason("Parameters passed are not valid") { }, new FaultCode("Sender"));
             }
-            var result = n1 / n2;
-            return result;
+            else
+            {
+                var result = x / y;
+                return result;
+            }
         }
 
         [DataContract]

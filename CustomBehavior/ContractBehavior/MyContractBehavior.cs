@@ -31,7 +31,10 @@ namespace CustomBehavior
 
         public void ApplyDispatchBehavior(ContractDescription contractDescription, ServiceEndpoint endpoint, DispatchRuntime dispatchRuntime)
         {
-            Console.WriteLine(endpoint.Binding.Name);
+            foreach(EndpointDispatcher dis in dispatchRuntime.ChannelDispatcher.Endpoints)
+            {
+                dis.DispatchRuntime.MessageInspectors.Add(new ServiceInterpector());
+            }
         }
 
         public void Validate(ContractDescription contractDescription, ServiceEndpoint endpoint)
