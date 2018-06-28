@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace RetrieveMetadata
 {
+    [ServiceBehavior]
     public class CalculatorService : ICalculator
     {
         public double Add(double n1, double n2)

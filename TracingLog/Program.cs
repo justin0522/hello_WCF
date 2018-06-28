@@ -21,6 +21,11 @@ namespace TracingLog
             string uri = "http://10.1.83.11:8889/calc";
             try
             {
+                //TraceSource wcf = new TraceSource("System.ServiceModel");
+                //wcf.TraceInformation("TracingLog");
+                //wcf.Flush();
+                //wcf.Switch.Level = SourceLevels.Off;
+
                 ServiceHost host = new ServiceHost(typeof(Calculator), new Uri(uri));
                 BasicHttpBinding binding = new BasicHttpBinding();
                 host.AddServiceEndpoint(typeof(ICalculator), binding, "");
@@ -35,13 +40,14 @@ namespace TracingLog
                 ICalculator proxy = factory.CreateChannel();
 
                 var result = proxy.Divide(2 , 0);
-                Trace.WriteLine(result, "Debug");
-                Trace.Flush();
-                Debug.WriteLine(result, "Debug");
-                Debug.Flush();
+                //Trace.WriteLine(result, "Debug");
+                //Trace.Flush();
+                //Debug.WriteLine(result, "Debug");
+                //Debug.Flush();
                 
-                TraceSource ts = new TraceSource("TracingLog");
+                TraceSource ts = new TraceSource("TracingLog.TracingLog");
                 ts.TraceInformation("TracingLog");
+                ts.Listeners.Add(new TextWriterTraceListener(""));
                 ts.Flush();
                 DisplayProperties(ts);
 

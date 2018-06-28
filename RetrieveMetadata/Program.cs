@@ -24,23 +24,23 @@ namespace RetrieveMetadata
         {
             StartService();
 
-            ChannelFactory<ICalculator> factory = new ChannelFactory<ICalculator>(new WSHttpBinding(), uri);
-            ICalculator proxy = factory.CreateChannel();
-            try
-            {
-                proxy.Divide(2, 0);
-            }
-            catch (FaultException<MathError> ex)
-            {
-                Console.WriteLine(ex);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex);
-            }
-            ImportAllContracts();
+            //ChannelFactory<ICalculator> factory = new ChannelFactory<ICalculator>(new WSHttpBinding(), uri);
+            //ICalculator proxy = factory.CreateChannel();
+            //try
+            //{
+            //    proxy.Divide(2, 0);
+            //}
+            //catch (FaultException<MathError> ex)
+            //{
+            //    Console.WriteLine(ex);
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex);
+            //}
+            //ImportAllContracts();
 
-            ImportAllEndpoints();
+            //ImportAllEndpoints();
 
             Console.ReadLine();
         }

@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDataContract", "TestDat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMessage", "TestMessage\TestMessage.csproj", "{A8E02AAC-13B7-44A3-90BC-B8BD618FEA08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSwaggerWcf", "TestSwaggerWcf\TestSwaggerWcf.csproj", "{3F804ACE-720B-42A6-8148-F803AE178D70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{A8E02AAC-13B7-44A3-90BC-B8BD618FEA08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8E02AAC-13B7-44A3-90BC-B8BD618FEA08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8E02AAC-13B7-44A3-90BC-B8BD618FEA08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F804ACE-720B-42A6-8148-F803AE178D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F804ACE-720B-42A6-8148-F803AE178D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F804ACE-720B-42A6-8148-F803AE178D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F804ACE-720B-42A6-8148-F803AE178D70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,6 +8,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using System.Xml.Serialization;
 
 namespace TestDataContract
 {
@@ -56,6 +57,20 @@ namespace TestDataContract
             }
             return (T)obj;
         }
+
+        static void XMLSerialize<T>(T instancet, string fileName)
+        {
+            var serialize = new XmlSerializer(typeof(T));
+            using (FileStream fs = new FileStream(fileName, FileMode.OpenOrCreate))
+            {
+                using (XmlDictionaryWriter writer = XmlDictionaryWriter.CreateTextWriter(fs))
+                {
+                    serialize.Serialize(writer, instancet);
+                }
+            }
+            Process.Start(fileName);
+        }
+
 
         static void KnownType()
         {

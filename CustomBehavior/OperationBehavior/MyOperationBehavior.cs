@@ -25,7 +25,7 @@ namespace CustomBehavior
 
         public void ApplyDispatchBehavior(OperationDescription operationDescription, DispatchOperation dispatchOperation)
         {
-            
+            //dispatchOperation.CallContextInitializers.Add()
         }
 
         public void Validate(OperationDescription operationDescription)
