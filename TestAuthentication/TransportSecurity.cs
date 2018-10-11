@@ -308,11 +308,11 @@ namespace TestAuthentication
             //host.Credentials.UserNameAuthentication.UserNamePasswordValidationMode = UserNamePasswordValidationMode.Custom;
             //host.Credentials.UserNameAuthentication.CustomUserNamePasswordValidator = new CustomUserNamePasswordValidator();
 
-            WebHttpBinding webBinding = new WebHttpBinding();
-            webBinding.Security.Mode = WebHttpSecurityMode.Transport;
-            webBinding.Security.Transport.ClientCredentialType = HttpClientCredentialType.Windows;
+            WebHttpBinding webHttpBinding = new WebHttpBinding();
+            webHttpBinding.Security.Mode = WebHttpSecurityMode.Transport;
+            webHttpBinding.Security.Transport.ClientCredentialType = HttpClientCredentialType.Basic;
 
-            host.AddServiceEndpoint(typeof(ICalculator), webBinding, "").Behaviors.Add(new WebHttpBehavior());
+            host.AddServiceEndpoint(typeof(ICalculator), webHttpBinding, "").Behaviors.Add(new WebHttpBehavior());
             try
             {
                 host.Open();
@@ -320,7 +320,7 @@ namespace TestAuthentication
 
                 EndpointAddress epAddress = new EndpointAddress(new Uri(uri), EndpointIdentity.CreateDnsIdentity(dnsName));
 
-                ChannelFactory<ICalculator> factory = new ChannelFactory<ICalculator>(webBinding, epAddress);
+                ChannelFactory<ICalculator> factory = new ChannelFactory<ICalculator>(webHttpBinding, epAddress);
                 factory.Endpoint.Behaviors.Add(new WebHttpBehavior());
                 //validate the certificate of server
                 ServicePointManager.ServerCertificateValidationCallback += (sender, certificate, chain, sslPolicyErrors) =>

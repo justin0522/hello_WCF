@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace DuplexCommunication
 {
+	[ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession)]
     class Calculator : ICalculator
     {
         public void Add(int x, int y)

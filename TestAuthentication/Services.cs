@@ -12,6 +12,7 @@ using System.ServiceModel.Dispatcher;
 using System.Text;
 using System.Threading.Tasks;
 using System.IdentityModel.Claims;
+using System.Web.Security;
 
 namespace TestAuthentication
 {
@@ -69,4 +70,9 @@ namespace TestAuthentication
         }
     }
     
+    //class SqlMembershipProvider : System.Web.Security.MembershipProvider
+    //{
+
+    //}
+
 }
